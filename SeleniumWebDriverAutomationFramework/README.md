@@ -27,3 +27,5 @@ comment.user=I work at PokerStars.
         xpath("//option[@value='dd4']")
         xpath("//option[@value='dd5']")
         xpath("//option[@value='dd6']")
+
+3. Start LoginTest
