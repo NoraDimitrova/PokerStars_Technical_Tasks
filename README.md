@@ -15,7 +15,7 @@ Write a program that takes 10 integer inputs from the user and prints the follow
 - Number of 0s
 Use your preferred programming language
 
-3. Automation task
+2. Automation task
 
 Write a script that loads:
 [Basic HTML Form Example](https://testpages.herokuapp.com/styled/basic-html-form-test.html)
