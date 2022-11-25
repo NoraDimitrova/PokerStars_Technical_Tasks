@@ -1,0 +1,17 @@
+2022-11-25 10:05:35,541 INFO  [main] Properties loaded successfully.
+2022-11-25 10:05:35,557 INFO  [main] Properties loaded successfully.
+2022-11-25 10:05:35,557 INFO  [main] Initializing WebDriver
+2022-11-25 10:05:42,773 INFO  [main] chrome driver is initialized.
+2022-11-25 10:05:43,466 INFO  [main] Initializing WebDriver
+2022-11-25 10:05:43,474 INFO  [main] Initializing WebDriver
+2022-11-25 10:05:43,726 INFO  [main] Clicking on element //input[@type='text']
+2022-11-25 10:05:44,425 INFO  [main] Clicking on element //input[@value='cb3']
+2022-11-25 10:05:44,507 INFO  [main] Clicking on element //input[@value='cb1']
+2022-11-25 10:05:44,574 INFO  [main] Clicking on element //input[@value='rd2']
+2022-11-25 10:05:44,820 INFO  [main] Clicking on element //option[@value='ms4']
+2022-11-25 10:05:44,883 INFO  [main] Clicking on element //option[@value='ms3']
+2022-11-25 10:05:44,946 INFO  [main] Clicking on element //select[@name='dropdown']
+2022-11-25 10:05:45,052 INFO  [main] Clicking on element //option[@value='dd4']
+2022-11-25 10:05:45,126 INFO  [main] Clicking on element //input[@type='submit']
+2022-11-25 10:05:45,506 INFO  [main] Clicking on element button.goBackToTheForm
+2022-11-25 10:05:45,799 INFO  [main] Quitting WebDriver
