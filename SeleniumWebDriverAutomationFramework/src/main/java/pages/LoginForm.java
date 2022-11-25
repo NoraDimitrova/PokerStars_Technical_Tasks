@@ -26,7 +26,7 @@ public class LoginForm extends BaseHomePage {
         checkboxSwitchOff();
         actions.clickElement("//input[@value='cb1']"); // XPath for checkbox 1
         actions.clickElement("//input[@value='rd2']"); // XPath for radio button 2
-        MultipleSelectValues();
+        multipleSelectValues();
         actions.clickElement("//option[@value='ms3']"); // XPath for selection item 3
         actions.clickElement("//select[@name='dropdown']");
         actions.clickElement("//option[@value='dd4']"); // XPath for Dropdown item 4:
@@ -37,7 +37,7 @@ public class LoginForm extends BaseHomePage {
 
     }
 
-    private void MultipleSelectValues() {
+    private void multipleSelectValues() {
         WebElement item1 = driver.findElement(By.xpath("//option[@value='ms1']"));
         WebElement item2 = driver.findElement(By.xpath("//option[@value='ms2']"));
         WebElement item3 = driver.findElement(By.xpath("//option[@value='ms3']"));

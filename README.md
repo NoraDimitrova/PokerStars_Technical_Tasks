@@ -28,3 +28,4 @@ And performs automatically
 - Selecting dropdown values
 
 Used your preferred technology (eg. Selenium, Cypress) and preferred language
+
