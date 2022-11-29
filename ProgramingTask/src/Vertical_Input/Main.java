@@ -13,7 +13,7 @@ public class Main {
 
         int numberOfOdd = 0;
         int numberOfEven = 0;
-        int numberOfZeroo = 0;
+        int numberOfZero = 0;
 
         for (int i = 0; i < 10; i++) {
             if (numbers[i] % 2 == 0 && numbers[i] != 0) {
@@ -21,13 +21,13 @@ public class Main {
             } else if (numbers[i] % 2 == 1) {
                 numberOfOdd++;
             } else if (numbers[i] == 0) {
-                numberOfZeroo++;
+                numberOfZero++;
             }
         }
 
         System.out.println("Number of odd numbers - " + numberOfOdd);
         System.out.println("Number of even numbers - " + numberOfEven);
-        System.out.println("Number of 0s - " + numberOfZeroo);
+        System.out.println("Number of 0s - " + numberOfZero);
 
     }
 }

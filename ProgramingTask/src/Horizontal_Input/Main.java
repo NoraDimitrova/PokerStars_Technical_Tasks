@@ -20,12 +20,12 @@ public class Main {
 
         int numberOfOdd = 0;
         int numberOfEven = 0;
-        int numberOfZeroo = 0;
+        int numberOfZero = 0;
 
         for (int i = 1; i <= 10; i++) {
             int number = scanner.nextInt();
             if (number == 0) {
-                numberOfZeroo++;
+                numberOfZero++;
             } else if (number % 2 == 0) {
                 numberOfEven++;
             } else {
@@ -37,6 +37,6 @@ public class Main {
 
         System.out.println("Number of odd numbers - " + numberOfOdd);
         System.out.println("Number of even numbers - " + numberOfEven);
-        System.out.println("Number of 0s - " + numberOfZeroo);
+        System.out.println("Number of 0s - " + numberOfZero);
     }
 }
