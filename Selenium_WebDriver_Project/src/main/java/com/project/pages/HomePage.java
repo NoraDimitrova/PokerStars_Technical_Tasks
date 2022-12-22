@@ -2,7 +2,7 @@ package com.project.pages;
 
 import org.openqa.selenium.WebDriver;
 
-public class HomePage {
+public abstract class HomePage {
 
     public WebDriver webDriver;
 

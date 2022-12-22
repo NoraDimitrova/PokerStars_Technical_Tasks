@@ -16,6 +16,6 @@ public class BaseTestSetup {
 
     @AfterClass
     public static void tearDown() {
-        UserActions.quitDriver();
+        //UserActions.quitDriver();
     }
 }

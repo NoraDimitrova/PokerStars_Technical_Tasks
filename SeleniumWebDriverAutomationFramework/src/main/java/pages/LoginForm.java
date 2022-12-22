@@ -25,7 +25,7 @@ public class LoginForm extends BaseHomePage {
 
         checkboxSwitchOff();
         actions.clickElement("//input[@value='cb1']"); // XPath for checkbox 1
-        actions.clickElement("//input[@value='rd2']"); // XPath for radio button 2
+        actions.clickElement("//input[@value='rd2']"); // XPath for radio button 2 // /html/body/div/div[3]/form/table/tbody/tr[6]/td/input[2]
         multipleSelectValues();
         actions.clickElement("//option[@value='ms3']"); // XPath for selection item 3
         actions.clickElement("//select[@name='dropdown']");

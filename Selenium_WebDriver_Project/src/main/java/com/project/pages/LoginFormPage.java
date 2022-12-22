@@ -4,6 +4,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
+import static org.openqa.selenium.Keys.ENTER;
+
 public class LoginFormPage extends HomePage {
 
     public LoginFormPage(WebDriver webDriver) {
@@ -23,21 +25,31 @@ public class LoginFormPage extends HomePage {
         passwordField.sendKeys(password);
 
         WebElement commentField = webDriver.findElement(By.xpath("//textarea[@name='comments']"));
+        // Dynamic XPath: //*[@id="HTMLFormElements"]/table/tbody/tr[3]/td/textarea
         commentField.clear();
         commentField.sendKeys(comment);
+        commentField.sendKeys(ENTER);
+        commentField.sendKeys(username);
+        commentField.sendKeys(ENTER);
+        commentField.sendKeys(password);
 
         checkboxSwitchOff();
+        // relative XPath:
         WebElement checkbox1 = webDriver.findElement(By.xpath("//input[@value='cb1']"));
         checkbox1.click();
 
-        WebElement radioButton= webDriver.findElement(By.xpath("//input[@value='rd2']"));
+        // absolute XPath:
+        WebElement radioButton= webDriver.findElement(By.xpath("/html/body/div/div[3]/form/table/tbody/tr[6]/td/input[2]"));
+        //this is relative XPath for the above radio button //input[@value='rd2']
         radioButton.click();
 
         multipleSelectValues();
-        WebElement item3 = webDriver.findElement(By.xpath("//option[@value='ms3']"));
+        //dynamic XPath:
+        WebElement item3 = webDriver.findElement(By.xpath("//*[@id=\"HTMLFormElements\"]/table/tbody/tr[7]/td/select/option[3]"));
+        // this is relative XPath for the above button //option[@value='ms3']
         item3.click();
 
-        WebElement dropdownButton = webDriver.findElement(By.xpath("//select[@name='dropdown']"));
+        WebElement dropdownButton = webDriver.findElement(By.name("dropdown")); // XPath //select[@name='dropdown']
         dropdownButton.click();
 
         WebElement dropdownItem4 = webDriver.findElement(By.xpath("//option[@value='dd4']"));
@@ -45,6 +57,8 @@ public class LoginFormPage extends HomePage {
 
         WebElement submitButton = webDriver.findElement(By.xpath("//input[@type='submit']"));
         submitButton.click();
+
+
 
     }
 
