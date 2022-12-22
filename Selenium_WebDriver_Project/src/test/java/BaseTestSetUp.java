@@ -28,7 +28,7 @@ public class BaseTestSetUp {
 
     @After
     public void tearDown() {
-//        webDriver.quit();
+        webDriver.quit();
     }
 
 }
