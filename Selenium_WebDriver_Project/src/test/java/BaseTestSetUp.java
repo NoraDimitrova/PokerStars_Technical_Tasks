@@ -21,6 +21,7 @@ public class BaseTestSetUp {
         webDriver = new ChromeDriver();
 //        webDriver = new FirefoxDriver();
         webDriver.manage().window().maximize();
+        webDriver.manage().deleteAllCookies();
         webDriver.get("https://testpages.herokuapp.com/styled/basic-html-form-test.html");
     }
 
