@@ -17,6 +17,7 @@ public class LoginFormPage extends HomePage {
         String username = "Nora";
         String uniquePassword = "nora" + System.currentTimeMillis() + "18";
         String comment = "I wish you luck!";
+        String uniqueEmail="test"+System.currentTimeMillis()+"@abv.bg";
 
 
         WebElement usernameField = webDriver.findElement(By.xpath("//input[@type='text']"));
