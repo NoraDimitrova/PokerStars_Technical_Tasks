@@ -15,14 +15,15 @@ public class LoginFormPage extends HomePage {
     public void login() {
 
         String username = "Nora";
-        String password = "nora11";
+        String uniquePassword = "nora" + System.currentTimeMillis() + "18";
         String comment = "I wish you luck!";
+
 
         WebElement usernameField = webDriver.findElement(By.xpath("//input[@type='text']"));
         usernameField.sendKeys(username);
 
         WebElement passwordField = webDriver.findElement(By.xpath("//input[@type='password']"));
-        passwordField.sendKeys(password);
+        passwordField.sendKeys(uniquePassword);
 
         WebElement commentField = webDriver.findElement(By.xpath("//textarea[@name='comments']"));
         // Dynamic XPath: //*[@id="HTMLFormElements"]/table/tbody/tr[3]/td/textarea
@@ -31,7 +32,7 @@ public class LoginFormPage extends HomePage {
         commentField.sendKeys(ENTER);
         commentField.sendKeys(username);
         commentField.sendKeys(ENTER);
-        commentField.sendKeys(password);
+        commentField.sendKeys(uniquePassword);
 
         checkboxSwitchOff();
         // relative XPath:
@@ -39,7 +40,7 @@ public class LoginFormPage extends HomePage {
         checkbox1.click();
 
         // absolute XPath:
-        WebElement radioButton= webDriver.findElement(By.xpath("/html/body/div/div[3]/form/table/tbody/tr[6]/td/input[2]"));
+        WebElement radioButton = webDriver.findElement(By.xpath("/html/body/div/div[3]/form/table/tbody/tr[6]/td/input[2]"));
         //this is relative XPath for the above radio button //input[@value='rd2']
         radioButton.click();
 
@@ -57,7 +58,6 @@ public class LoginFormPage extends HomePage {
 
         WebElement submitButton = webDriver.findElement(By.xpath("//input[@type='submit']"));
         submitButton.click();
-
 
 
     }
